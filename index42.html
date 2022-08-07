@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tmms</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Bootstrap 5 css file -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap 5 js file -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Main css file -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Start of the side nav -->
+    <nav
+    id="sideNav"
+    class="sidenav opened p-3 position-fixed top-0 d-flex align-items-center justify-content-between flex-column bg-white overflow-auto"
+  >
+    <!-- Logo -->
+    <div class="logo w-100 d-flex justify-content-center ">
+      <div
+        class="logo-content d-flex align-items-center justify-content-center"
+      >
+        <span class="text-uppercase text-white">tmms</span>
+      </div>
+    </div>
+    <!-- End of the logo -->
+
+    <!-- Start of the side nav menu -->
+    <ul class=" mt-3 sidenav-menu list-unstyled">
+      <li>
+        <a
+          href="index.html"
+          class="d-block ps-5 ms-5  mb-2 text-decoration-none text-dark  text-capitalize"
+          >advertisment</a
+        >
+      </li>
+      <li>
+        <a
+          href="index9.html"
+          class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+          >new tenders</a
+        >
+      </li>
+      <li>
+        <a
+          href="index23.html"
+          class="d-block ps-5 ms-5  mb-2 text-decoration-none text-dark text-capitalize"
+          >tenders history</a
+        >
+      </li>
+      <li>
+        <a
+          href="index24.html"
+          class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+          >live competition</a
+        >
+      </li>
+      <li>
+        <a
+          href="index27.html"
+          class="d-block ps-5 ms-5 mb-2 text-decoration-none text-dark text-capitalize"
+          >Practice</a
+        >
+      </li>
+      <li>
+        <a
+          href="index30.html"
+          class="d-block ps-5 ms-5 mb-2 text-decoration-none text-dark text-capitalize"
+          >my products</a
+        >
+      </li>
+      <li>
+        <a
+          href="index43.html"
+          class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+          >my documents</a
+        >
+      </li>
+      <li>
+        <a
+          href="index34.html"
+          class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+          >services</a
+        >
+      </li>
+      <li>
+        <a
+          href="index41.html"
+          class="active d-block ps-5 ms-5   mb-2 text-decoration-none text-white text-capitalize"
+          >news</a
+        >
+      </li>
+      <li>
+        <a
+          href="#"
+          class="d-block ps-5 ms-5   mb-2 text-decoration-none text-dark text-capitalize"
+          >reports</a
+        >
+      </li>
+      <li>
+        <a
+          href="index46.html"
+          class=" d-block ps-5 ms-5 mb-5 pb-2 text-decoration-none text-dark text-capitalize"
+          >payments</a
+        >
+      </li>
+    </ul>
+    <!-- End of the side nav menu -->
+
+    <!-- Logout btn -->
+    <button
+      class="logout-btn btn mt-5 pt-5 pe-4 d-flex align-items-center justify-content-center"
+    >
+      <img src="images/layout-img.png" class="mt-1 me-2" alt="log-out-img" />
+      <span>logout</span>
+    </button>
+    <!-- End of the logout btn -->
+  </nav>
+  <!-- End of the side nav -->
+
+  
+    <!-- Start of the navbar -->
+    <nav class="navbar py-2 position-sticky top-0 bg-white opened">
+      <!-- Start of the container -->
+      <div class="container">
+        <!-- Bars icon btn -->
+        <button id="barsIcon" class="bars btn text-start">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- End of the bars icon btn -->
+ <!-- Search -->
+ <div class="search me-5 position-relative d-flex align-items-center">
+  <i class="search-icon position-absolute fa-solid fa-magnifying-glass"></i>
+  <input
+    id="searchInput"
+    type="text"
+    class="form-control border-2"
+    placeholder="Search..."
+  />
+  <button id="closeSearchMenu" class="btn p-0 close-search position-absolute d-none">
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+  <!-- Start of the search menu -->
+  <div class="search-menu w-100 position-absolute bg-white d-none overflow-hidden"></div>
+  <!-- End of the search menu -->
+</div>
+<!-- End of the search -->
+
+        <!-- Search --
+        <div class="search me-5 position-relative d-flex align-items-center">
+          <i class="position-absolute fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="form-control border-2"
+            placeholder="Search..."
+          />
+        </div>
+        <!-- End of the search -->
+
+        <!-- Start of the left box -->
+        <div class="left d-flex align-items-center justify-content-end">
+          <!-- Notification-dropdown -->
+          <div class="dropdown notification-dropdown me-2">
+            
+            <button
+              class="btn p-0 dropdown-toggle"
+              type="button"
+              id="notificationDropdown"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            > 
+              <i class="fa-solid fa-bell"></i>
+              
+            </button>
+            <!-- Notification dropdown content -->
+    
+            <ul
+              class="dropdown-menu end-0 mt-3"
+              aria-labelledby="notificationDropdown">
+
+            <li class="notification-first pt-2 " >
+              <a class="dropdown-item d-flex justify-content-between " href="#"  style="background: none">
+                <span class="notification-text ">Notifications</span>
+                <span class=" search1"><i class="fa fa-search"></i></span>
+              </a>
+            </li>
+            <li class="notification-New pt-3" >
+              <a class="dropdown-item d-inline" href="#">
+              <span class="notification-text2 ">New</span>
+              <span>
+                <a href="#" class="notification-mark px-3" >Mark All as Read</a>
+              </span>
+            </a>
+          </li>
+          <li class="notification1">
+            <a href="index.html">
+              <div class="list-item">
+                <div class="list-left">
+                  <span class="avatar mx-3">
+                    <img alt="" src="./images/hammer3.png">
+                    <span class="new-ad">New advertisement added and x company ask you to join</span>
+                    <p class="notification-time ps-5 ms-3">2h Ago . advertisements</p>
+                  </span>
+                </div>
+            
+              </div>
+            </a>
+          </li>
+          <li class="notification1">
+            <a href="index.html">
+              <div class="list-item">
+                <div class="list-left">
+                  <span class="avatar mx-3">
+                    <img alt="" src="./images/hammer3.png">
+                    <span class="new-ad">Tender awarded deadline in two days at 24/05/2022</span>
+                    <p class="notification-time ps-5 ms-3">2h Ago . Tenders</p>
+                  </span>
+                </div>
+            
+              </div>
+            </a>
+          </li>
+        
+          <li class="notification1">
+            <a href="index.html">
+              <div class="list-item">
+                <div class="list-left">
+                  <span class="avatar mx-3">
+                    <img alt="" src="./images/hammer3.png">
+                    <span class="new-ad">New announcing for tender X is finished you can</span>
+                    <p class="notification-time ps-5 ms-3">2h Ago . advertisements</p>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="notification1">
+            <a href="index.html">
+              <div class="list-item">
+                <div class="list-left">
+                  <span class="avatar mx-3">
+                    <img alt="" src="./images/hammer3.png">
+                    <span class="new-ad">new advertisement added and x company ask you </span>
+                    <p class="notification-time ps-5 ms-3">2h Ago . Tenders</p>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="notification1">
+            <a href="index.html">
+              <div class="list-item">
+                <div class="list-left">
+                  <span class="avatar mx-3">
+                    <img alt="" src="./images/hammer3.png">
+                    <span class="new-ad">New advertisement added and x company ask you </span>
+                    <p class="notification-time ps-5 ms-3">2h Ago . advertisements</p>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="notification1">
+            <a href="index.html">
+              <div class="list-item">
+                <div class="list-left">
+                  <span class="avatar mx-3">
+                    <img alt="" src="./images/hammer3.png">
+                    <span class="new-ad">Tender awarded deadline in two days at 24/05/2022</span>
+                    <p class="notification-time ps-5 ms-3">2h Ago . Tenders</p>
+                  </span>
+                </div>
+              </div>
+            </a>
+          </li>
+            </ul>
+            <!-- End of the notification dropdown content -->
+          </div>
+          <!-- End of the notification dropdown -->
+  <!-- Profile dropdown -->
+  <div class="dropdown profile-dropdown p-2">
+    <button class="w-100 btn px-3 dropdown-toggle d-flex align-items-center justify-content-between" type="button"
+    id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="d-flex align-items-center">
+      <img src="images/profile.png" class="profile-img me-2" alt="profile-img" />
+      <span>X hospital</span>
+    </span>
+
+    <i class="fa-solid fa-angle-down"></i>
+  </button>
+
+  <div class="dropdown-menu p-0 x-hospital1 end-0" aria-labelledby="dropdownMenuLink">
+    <div class="profile-info d-flex mb-1 p-2">
+      <img src="./images/profile.png" class="d-block me-3" alt="profile-img" />
+      <div class="profile-data w-100 mt-1">
+        <h5 class="text-dark mb-1 profile-name">X hospital</h5>
+        <h6 class="text-secondary profile-email mb-2">X hospital@gmail.com</h6>
+        <div class="edit-profile d-flex justify-content-end">
+          <button class="btn text-white">Edit Profile</button>
+        </div>
+      </div>
+    </div>
+    <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="index38.html">
+      <i class="fa-solid fa-heart me-2"></i>
+      <span class="text-capitalize ps-2">Favorite Tenders</span>
+    </a>
+    <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="index38.html">
+      <i class="fa fa-user me-2"></i>
+      <span class="text-capitalize ps-2">My Profile</span>
+    </a>
+    <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="#">
+      <i class="fa fa-download me-2"></i>
+      <span class="text-capitalize ps-2">Downloads</span>
+    </a>
+    <a class="dropdown-item p-3 d-flex align-items-center border-bottom border-2" href="#">
+      <i class="fa fa-gear me-2"></i>
+      <span class="text-capitalize ps-2">Settings</span>
+    </a>
+    <a class="dropdown-item p-3 d-flex align-items-center" href="#">
+      <i class="fa fa-sign-out me-2"></i>
+      <span class="text-capitalize ps-2">Log Out</span>
+    </a>
+  </div>
+</div>
+</div>
+<!-- End of the profile dropdown --
+      
+        </div>
+        <!-- End of the left box -->
+      </div>
+      <!-- End of the container -->
+    </nav>
+    <!-- End of the navbar -->
+    <!--search----->
+    <div class="advertisment-search ms-5 mt-4 pt-3 ">
+      <div class="row">
+        <div class="page_title_box d-flex  ">
+        <div class="col-md-9">
+          <div class="page_title_left d-flex align-items-center">
+              <h3 class="f_s_25 f_w_700 dark_text pt-2  ">News</h3>
+          </div>
+        </div>
+   </div>
+</div>
+</div>
+<!------Search---->
+  
+<div class="advertisment__bottom " style="height: 55px;width: 1445px;">
+<div class="Live-advertisments pb-4">
+  <div class="advertisment__bottom__item ">
+    <a href="index41.html" class="">
+      <i class="fa-solid fa-file"></i>
+      <span class="all-ads"> All Tenders </span>
+    </a >
+
+  </div>
+  </div>
+  <div class="all-advertisments pb-5 pt-4 px-3">
+  <div class="advertisment__bottom__item pt-4 mt-4">
+    <a href="index42.html">
+      <i class="fa-solid fa-file"></i>
+      <span>All News </span></a>
+      <hr class="hr1 ">
+
+  </div>
+</div>
+</div>
+</div>
+<!-- End of advertisments Section -->
+<!-- Start Cards Section -->
+ <!---------------------box------------------------------------>
+ <div class="box mt-3 bg-white" style="    width: 95%;
+ height: 760px;
+ margin-left: 4%;">
+     <div class="container">
+         <div class="row">
+             <div class="col-md-7 ps-5">
+                <img src="./images/hammer2.png" style="width:10%" class="mt-5 "><br>
+                <span class=" all-news-text text-right  " >شعبان 30, 1442</span>  </h6> 
+                <h6 class="heading">A workshop for the private sector reviews the most prominent features<br> of the Competition and procurement system</h6>
+                <p class="details-news pt-4">The Ministry of Finance and the Spending Efficiency Achievement Center, in<br>
+                     cooperation with the Local Content and Government Procurement Authority,<br>
+                      recently organized at the Chamber of Commerce in Riyadh, a workshop to<br>
+                       introduce the new government competition and procurement system, in the<br>
+                        presence of representatives from the private sector. The workshop touched <br>
+                        on the most prominent features of the new system, its objectives and scope<br>
+                        of application, in addition to the most important changes in it compared to<br>
+                        the previous system. The workshop also addressed the definition of the<br>
+                         provisions of the local content preference regulation, small and medium<br>
+                          enterprises, and companies listed in the financial market, and their role in the<br>
+                         development of the local economy. government competition and procurement<br>
+                          system, issued by royal decree, aims to enhance the effectiveness of financial<br>
+                     planning, raise the efficiency of spending on development projects, achieve<br>
+                     financial balance, prevent the influence of personal interests, enhance integrity<br>
+                     and competition, achieve the principle of equal opportunities, organize<br>
+                     procedures, and promote economic development. Achieving the best value and<br>
+                     protecting public money, and providing a fair treatment for competitors.</p>
+               </div>
+             <div class="col-md-5 ">
+                  <img src="./images/tender.png" class="pic-tender mt-5 ml-3 ">
+    
+                  <div class="social text-center mt-5 ms-5">
+                    <ul class="d-flex justify-content-center" style="list-style: none;">
+                        <li class="print1"><a href="#url" class="print" ><span class="fas fa-print" aria-hidden="true"></span></a></li>     
+                        <li class="ms-4 youtube1"><a href="#url" class="youtube"><span class="fab fa-youtube" aria-hidden="true" ></span></a></li>
+                        <li class="ms-4 facebook1"><a href="#url" class="facebook"><span class="fab fa-facebook-f" aria-hidden="true" style="width: 36px"></span></a></li>
+                        <li class="ms-4 linkedin1" ><a href="#url" class="linkedin p-6"><span class="fab fa-linkedin-in" aria-hidden="true" style="width: 40px"></span></a></li>
+                        <li class="mx-4 twitter1"><a href="#url" class="twitter"><span class="fab fa-twitter" aria-hidden="true"style="width: 40px"></span></a></li>
+                    </ul>
+                  </div>
+             </div>
+         </div>
+     </div>
+ </div>
+<!-------------------------------------------------------------box3---------------------------->
+<div class="card2 pt-5" style="    width: 95%;
+margin-left: 4%;
+height: 880px;
+background: #EBF9F2">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+            <div class="page_title_left ">
+               <h3 class="f_s_25 f_w_700 dark_text mt-2 mb-5 "> More News </h3>
+            </div>
+         </div>
+         <div class="col-md-6">
+               <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+<span class="upload ml-2" >See All</span> </button>
+           </div>
+         </div>
+         <div class="monafast1">
+         <div class="row">
+            <div class="card-items col-md-4  c4">
+                <div class="card" style="    width: 430px;height: 348px">
+
+                    <span><img class="card-img-top " src="./images/monafasa.png" alt="Card image cap" style="     width: 76%;    height: 129px;
+                        ">شعبان 30, 1442
+                    </span>
+                        <div class="card-body" style="    height: 217px;
+                        ">
+                      <p class="card-text">Monafasat platform launches<br>
+                         the service of filing financial claims<br> for the private sector...</p>
+                     <p class="notes" style="    width: 400px;
+                     ">Competitions and purchases<br> The Kingdom of Saudi Arabia has sought to regulate<br> the procedures related to government procurement...</p>
+                        </div>
+                  </div>
+            </div>
+            <div class="card-items col-md-4  c3" style="    padding-left: 12%;
+            ">
+              <div class="card" style="    width: 430px;    height: 675px;
+              ">
+
+                  <span><img class="card-img-top " src="./images/monafasatt.png" alt="Card image cap" style="height: 345px;    width: 426px;
+
+                      ">  <span class=""><img src="./images/hammer1.png" style="width: 17% "><small class="card-date pt-3" >شعبان 30, 1442</small></span>
+                  </span>
+                      <div class="card-body" style="    height: 217px;
+                      ">
+                    <p class="card-text">A workshop for the private sector reviews<br> the most prominent features of the competition<br> and procurement system</p>
+                   <p class="notes" style="    width: 400px;
+                   ">The Ministry of Finance and the Spending Efficiency<br> Achievement Center, in cooperation with the Local<br> Content and Government Procurement Authority,<br> recently organized at the Riyadh Chamber of<br> Commerce...</p>
+                      </div>
+                </div>
+          </div>
+          <div class="card-items col-md-4  c3" style="    padding-left: 13%;
+          ">
+            <div class="card" style="    width: 430px; height: 675px;">
+
+                <span><img class="card-img-top " src="./images/monafasatt.png" alt="Card image cap" style="height: 345px;    width: 426px;
+
+                    ">  <span class=""><img src="./images/hammer1.png" style="width: 17% "><small class="card-date pt-3" >شعبان 30, 1442</small></span>
+                </span>
+                    <div class="card-body" style="    height: 217px;
+                    ">
+                  <p class="card-text">A workshop for the private sector reviews<br> the most prominent features of the competition<br> and procurement system</p>
+                 <p class="notes" style="    width: 400px;
+                 ">The Ministry of Finance and the Spending Efficiency<br> Achievement Center, in cooperation with the Local<br> Content and Government Procurement Authority,<br> recently organized at the Riyadh Chamber of<br> Commerce...</p>
+                    </div>
+              </div>
+        </div>
+    
+ 
+                </div>
+             </div>
+            </div>
+  
+<!-------------------------------------------------------------box3---------------------------->
+
+
+<!-- wishing you the best & life full of joy <3  -->
+    <!-- Main js file -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
